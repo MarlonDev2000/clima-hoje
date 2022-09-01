@@ -13,7 +13,7 @@ const tempSearch = async (e) => {
   if(inputSearch !== '') {
     showWarning('Carregando!')
 
-    let API_URL = `http://api.weatherapi.com/v1/current.json?key=3330a4e6e26449979a5140537222307&q=${encodeURI(inputSearch)}&aqi=no`
+    let API_URL = `https://api.weatherapi.com/v1/current.json?key=3330a4e6e26449979a5140537222307&q=${encodeURI(inputSearch)}&aqi=no`
   
 
     let result = await fetch(API_URL)
